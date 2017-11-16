@@ -10,13 +10,13 @@
  */
 
 CHIP Mux {
-    IN a, b, sel;
+    IN a, b, sel;   
     OUT out;
 
     PARTS:
-    // Put your code here:
-    Not(in=sel,out=x);
-    And(a=a,b=x,out=y);
+    // Put your code here: 
+    Not(in=sel,out=x);   
+    And(a=a,b=x,out=y);  
     And(b=b,a=sel,out=z);
-    Or(a=y,b=z,out=out);
+    Or(a=y,b=z,out=out); 
 }
